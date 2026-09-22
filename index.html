@@ -157,6 +157,7 @@
       
         <div class="section local_area">
             <h3>🚚 동작구퀵서비스 차량별 맞춤 배송</h3>
+          <p>노량진동 상도동 본동 흑석동 동작동 사당동 대방동 신대방동 동작 노량진 장승배기 수산시장 고시촌 남부순환로 노들로 상도로 시흥대로 동작대로 동작구 전지역</p>
             <ul>
                 <li>🏍️ 동작구오토바이퀵 : 서류 및 긴급 소형 화물 최우선 신속한 배송</li>
                 <li>🚙 동작구다마스퀵 : 중소형 가전, 소형이사 안전한 안심 배송</li>
@@ -254,5 +255,28 @@
       </footer>
    </div>
 </div>
+    <script>
+  // 마우스 우클릭 차단
+  document.addEventListener('contextmenu', function (e) {
+    e.preventDefault();
+  });
+
+  // 드래그 차단
+  document.addEventListener('dragstart', function (e) {
+    e.preventDefault();
+  });
+
+  // 텍스트 선택(블록 지정) 차단
+  document.addEventListener('selectstart', function (e) {
+    e.preventDefault();
+  });
+
+  // 복사 키(Ctrl+C / Cmd+C) 차단
+  document.addEventListener('keydown', function (e) {
+    if ((e.ctrlKey || e.metaKey) && e.key === 'c') {
+      e.preventDefault();
+    }
+  });
+</script>
 </body>
 </html>
